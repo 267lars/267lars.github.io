@@ -54,6 +54,7 @@
                 <a href="#analysis" class="text-gray-600 hover:text-primary transition-colors">客流分析</a>
                 <a href="#solutions" class="text-gray-600 hover:text-primary transition-colors">优化方案</a>
                 <a href="#limitations" class="text-gray-600 hover:text-primary transition-colors">局限性分析</a>
+                <a href="#performance" class="text-gray-600 hover:text-primary transition-colors">优化效果</a>
             </div>
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">
                 <i class="fa fa-bars text-xl"></i>
@@ -68,6 +69,7 @@
                 <a href="#analysis" class="text-gray-600 hover:text-primary py-2 transition-colors">客流分析</a>
                 <a href="#solutions" class="text-gray-600 hover:text-primary py-2 transition-colors">优化方案</a>
                 <a href="#limitations" class="text-gray-600 hover:text-primary py-2 transition-colors">局限性分析</a>
+                <a href="#performance" class="text-gray-600 hover:text-primary py-2 transition-colors">优化效果</a>
             </div>
         </div>
     </nav>
@@ -115,6 +117,7 @@
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">实际离开</th>
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">上车人数</th>
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">下车人数</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">停留时间(秒)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -126,6 +129,7 @@
                                 <td class="py-3 px-4 border border-gray-200">15:34:54</td>
                                 <td class="py-3 px-4 border border-gray-200">15</td>
                                 <td class="py-3 px-4 border border-gray-200">-</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">六公里</td>
@@ -133,93 +137,114 @@
                                 <td class="py-3 px-4 border border-gray-200">15:37:26</td>
                                 <td class="py-3 px-4 border border-gray-200">9</td>
                                 <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">77</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">二塘路</td>
+                                <td class="py-3 px-4 border border-gray-200">15:38:03</td>
+                                <td class="py-3 px-4 border border-gray-200">15:38:19</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">16</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">二塘路中段</td>
-                                <td class="py-3 px-4 border border-gray-200">15:38:30</td>
-                                <td class="py-3 px-4 border border-gray-200">15:39:45</td>
-                                <td class="py-3 px-4 border border-gray-200">12</td>
+                                <td class="py-3 px-4 border border-gray-200">15:40:15</td>
+                                <td class="py-3 px-4 border border-gray-200">15:40:45</td>
                                 <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">11</td>
+                                <td class="py-3 px-4 border border-gray-200">30</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘</td>
-                                <td class="py-3 px-4 border border-gray-200">15:40:55</td>
-                                <td class="py-3 px-4 border border-gray-200">15:42:10</td>
-                                <td class="py-3 px-4 border border-gray-200">10</td>
+                                <td class="py-3 px-4 border border-gray-200">二塘路口</td>
+                                <td class="py-3 px-4 border border-gray-200">15:41:40</td>
+                                <td class="py-3 px-4 border border-gray-200">15:41:56</td>
                                 <td class="py-3 px-4 border border-gray-200">0</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">七公里</td>
-                                <td class="py-3 px-4 border border-gray-200">15:43:45</td>
-                                <td class="py-3 px-4 border border-gray-200">15:44:55</td>
-                                <td class="py-3 px-4 border border-gray-200">7</td>
-                                <td class="py-3 px-4 border border-gray-200">2</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学</td>
-                                <td class="py-3 px-4 border border-gray-200">15:46:20</td>
-                                <td class="py-3 px-4 border border-gray-200">15:47:30</td>
                                 <td class="py-3 px-4 border border-gray-200">5</td>
-                                <td class="py-3 px-4 border border-gray-200">3</td>
+                                <td class="py-3 px-4 border border-gray-200">16</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学花溪校区</td>
-                                <td class="py-3 px-4 border border-gray-200">15:49:10</td>
-                                <td class="py-3 px-4 border border-gray-200">15:50:20</td>
+                                <td class="py-3 px-4 border border-gray-200">二塘路下口</td>
+                                <td class="py-3 px-4 border border-gray-200">15:44:03</td>
+                                <td class="py-3 px-4 border border-gray-200">15:44:18</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
                                 <td class="py-3 px-4 border border-gray-200">3</td>
-                                <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">15</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">丹龙南路</td>
+                                <td class="py-3 px-4 border border-gray-200">15:46:56</td>
+                                <td class="py-3 px-4 border border-gray-200"></td>
+                                <td class="py-3 px-4 border border-gray-200">4</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             
                             <!-- 下行数据 -->
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td rowspan="7" class="py-3 px-4 border border-gray-200 font-medium bg-orange-50">下行</td>
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学花溪校区</td>
+                                <td rowspan="8" class="py-3 px-4 border border-gray-200 font-medium bg-orange-50">下行</td>
+                                <td class="py-3 px-4 border border-gray-200">丹龙南路</td>
                                 <td class="py-3 px-4 border border-gray-200"></td>
-                                <td class="py-3 px-4 border border-gray-200">16:10:30</td>
-                                <td class="py-3 px-4 border border-gray-200">12</td>
+                                <td class="py-3 px-4 border border-gray-200">15:47:58</td>
+                                <td class="py-3 px-4 border border-gray-200">3</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                                 <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学</td>
-                                <td class="py-3 px-4 border border-gray-200">16:12:15</td>
-                                <td class="py-3 px-4 border border-gray-200">16:13:25</td>
-                                <td class="py-3 px-4 border border-gray-200">8</td>
+                                <td class="py-3 px-4 border border-gray-200">美堤雅城</td>
+                                <td class="py-3 px-4 border border-gray-200">15:49:46</td>
+                                <td class="py-3 px-4 border border-gray-200">15:50:32</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">46</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">兰花路中段</td>
+                                <td class="py-3 px-4 border border-gray-200">15:52:51</td>
+                                <td class="py-3 px-4 border border-gray-200">15:53:12</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">21</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">苹果城</td>
+                                <td class="py-3 px-4 border border-gray-200">15:54:08</td>
+                                <td class="py-3 px-4 border border-gray-200">15:54:25</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">17</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">山千苑西苑</td>
+                                <td class="py-3 px-4 border border-gray-200">15:56:00</td>
+                                <td class="py-3 px-4 border border-gray-200">15:56:25</td>
+                                <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">25</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">山千苑</td>
+                                <td class="py-3 px-4 border border-gray-200">15:59:03</td>
+                                <td class="py-3 px-4 border border-gray-200">15:59:13</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">回龙路</td>
+                                <td class="py-3 px-4 border border-gray-200">16:00:47</td>
+                                <td class="py-3 px-4 border border-gray-200">16:01:18</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
                                 <td class="py-3 px-4 border border-gray-200">4</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">七公里</td>
-                                <td class="py-3 px-4 border border-gray-200">16:15:00</td>
-                                <td class="py-3 px-4 border border-gray-200">16:16:10</td>
-                                <td class="py-3 px-4 border border-gray-200">10</td>
-                                <td class="py-3 px-4 border border-gray-200">5</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘</td>
-                                <td class="py-3 px-4 border border-gray-200">16:17:50</td>
-                                <td class="py-3 px-4 border border-gray-200">16:19:00</td>
-                                <td class="py-3 px-4 border border-gray-200">15</td>
-                                <td class="py-3 px-4 border border-gray-200">7</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘路中段</td>
-                                <td class="py-3 px-4 border border-gray-200">16:20:40</td>
-                                <td class="py-3 px-4 border border-gray-200">16:21:55</td>
-                                <td class="py-3 px-4 border border-gray-200">9</td>
-                                <td class="py-3 px-4 border border-gray-200">10</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">六公里</td>
-                                <td class="py-3 px-4 border border-gray-200">16:23:30</td>
-                                <td class="py-3 px-4 border border-gray-200">16:24:40</td>
-                                <td class="py-3 px-4 border border-gray-200">5</td>
-                                <td class="py-3 px-4 border border-gray-200">8</td>
+                                <td class="py-3 px-4 border border-gray-200">31</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">轨道六公里站</td>
-                                <td class="py-3 px-4 border border-gray-200">16:26:10</td>
-                                <td class="py-3 px-4 border border-gray-200">16:27:20</td>
-                                <td class="py-3 px-4 border border-gray-200">0</td>
-                                <td class="py-3 px-4 border border-gray-200">12</td>
+                                <td class="py-3 px-4 border border-gray-200">16:03:52</td>
+                                <td class="py-3 px-4 border border-gray-200"></td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
+                                <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                         </tbody>
                     </table>
@@ -247,6 +272,7 @@
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">实际离开</th>
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">上车人数</th>
                                 <th class="py-3 px-4 border border-gray-200 text-left font-semibold">下车人数</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">停留时间(秒)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -255,643 +281,457 @@
                                 <td rowspan="7" class="py-3 px-4 border border-gray-200 font-medium bg-blue-50">上行</td>
                                 <td class="py-3 px-4 border border-gray-200">轨道六公里站</td>
                                 <td class="py-3 px-4 border border-gray-200"></td>
-                                <td class="py-3 px-4 border border-gray-200">17:30:10</td>
-                                <td class="py-3 px-4 border border-gray-200">22</td>
+                                <td class="py-3 px-4 border border-gray-200">17:10:15</td>
+                                <td class="py-3 px-4 border border-gray-200">14</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                                 <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">六公里</td>
-                                <td class="py-3 px-4 border border-gray-200">17:31:30</td>
-                                <td class="py-3 px-4 border border-gray-200">17:32:45</td>
-                                <td class="py-3 px-4 border border-gray-200">15</td>
-                                <td class="py-3 px-4 border border-gray-200">2</td>
+                                <td class="py-3 px-4 border border-gray-200">17:11:46</td>
+                                <td class="py-3 px-4 border border-gray-200">17:12:29</td>
+                                <td class="py-3 px-4 border border-gray-200">8</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">43</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">二塘路</td>
+                                <td class="py-3 px-4 border border-gray-200">17:13:49</td>
+                                <td class="py-3 px-4 border border-gray-200">17:13:58</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">9</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">二塘路中段</td>
-                                <td class="py-3 px-4 border border-gray-200">17:34:00</td>
-                                <td class="py-3 px-4 border border-gray-200">17:35:15</td>
-                                <td class="py-3 px-4 border border-gray-200">18</td>
+                                <td class="py-3 px-4 border border-gray-200">17:15:37</td>
+                                <td class="py-3 px-4 border border-gray-200">17:16:05</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
                                 <td class="py-3 px-4 border border-gray-200">12</td>
+                                <td class="py-3 px-4 border border-gray-200">28</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘</td>
-                                <td class="py-3 px-4 border border-gray-200">17:36:45</td>
-                                <td class="py-3 px-4 border border-gray-200">17:38:00</td>
-                                <td class="py-3 px-4 border border-gray-200">14</td>
-                                <td class="py-3 px-4 border border-gray-200">8</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">七公里</td>
-                                <td class="py-3 px-4 border border-gray-200">17:39:30</td>
-                                <td class="py-3 px-4 border border-gray-200">17:40:45</td>
-                                <td class="py-3 px-4 border border-gray-200">10</td>
+                                <td class="py-3 px-4 border border-gray-200">二塘路口</td>
+                                <td class="py-3 px-4 border border-gray-200">17:17:40</td>
+                                <td class="py-3 px-4 border border-gray-200">17:17:56</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
                                 <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">16</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学</td>
-                                <td class="py-3 px-4 border border-gray-200">17:42:15</td>
-                                <td class="py-3 px-4 border border-gray-200">17:43:30</td>
-                                <td class="py-3 px-4 border border-gray-200">8</td>
-                                <td class="py-3 px-4 border border-gray-200">7</td>
+                                <td class="py-3 px-4 border border-gray-200">二塘路下口</td>
+                                <td class="py-3 px-4 border border-gray-200">17:20:03</td>
+                                <td class="py-3 px-4 border border-gray-200">17:20:18</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">3</td>
+                                <td class="py-3 px-4 border border-gray-200">15</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学花溪校区</td>
-                                <td class="py-3 px-4 border border-gray-200">17:45:10</td>
-                                <td class="py-3 px-4 border border-gray-200">17:46:25</td>
-                                <td class="py-3 px-4 border border-gray-200">5</td>
-                                <td class="py-3 px-4 border border-gray-200">9</td>
+                                <td class="py-3 px-4 border border-gray-200">丹龙南路</td>
+                                <td class="py-3 px-4 border border-gray-200">17:22:56</td>
+                                <td class="py-3 px-4 border border-gray-200"></td>
+                                <td class="py-3 px-4 border border-gray-200">4</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             
                             <!-- 下行数据 -->
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td rowspan="7" class="py-3 px-4 border border-gray-200 font-medium bg-orange-50">下行</td>
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学花溪校区</td>
+                                <td rowspan="8" class="py-3 px-4 border border-gray-200 font-medium bg-orange-50">下行</td>
+                                <td class="py-3 px-4 border border-gray-200">丹龙南路</td>
                                 <td class="py-3 px-4 border border-gray-200"></td>
-                                <td class="py-3 px-4 border border-gray-200">18:15:40</td>
-                                <td class="py-3 px-4 border border-gray-200">18</td>
+                                <td class="py-3 px-4 border border-gray-200">17:23:58</td>
+                                <td class="py-3 px-4 border border-gray-200">3</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                                 <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">重庆理工大学</td>
-                                <td class="py-3 px-4 border border-gray-200">18:17:25</td>
-                                <td class="py-3 px-4 border border-gray-200">18:18:40</td>
-                                <td class="py-3 px-4 border border-gray-200">14</td>
-                                <td class="py-3 px-4 border border-gray-200">6</td>
+                                <td class="py-3 px-4 border border-gray-200">美堤雅城</td>
+                                <td class="py-3 px-4 border border-gray-200">17:25:46</td>
+                                <td class="py-3 px-4 border border-gray-200">17:26:32</td>
+                                <td class="py-3 px-4 border border-gray-200">2</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">46</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">七公里</td>
-                                <td class="py-3 px-4 border border-gray-200">18:20:10</td>
-                                <td class="py-3 px-4 border border-gray-200">18:21:25</td>
-                                <td class="py-3 px-4 border border-gray-200">16</td>
-                                <td class="py-3 px-4 border border-gray-200">8</td>
+                                <td class="py-3 px-4 border border-gray-200">兰花路中段</td>
+                                <td class="py-3 px-4 border border-gray-200">17:28:51</td>
+                                <td class="py-3 px-4 border border-gray-200">17:29:12</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">21</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘</td>
-                                <td class="py-3 px-4 border border-gray-200">18:23:00</td>
-                                <td class="py-3 px-4 border border-gray-200">18:24:15</td>
-                                <td class="py-3 px-4 border border-gray-200">20</td>
-                                <td class="py-3 px-4 border border-gray-200">12</td>
+                                <td class="py-3 px-4 border border-gray-200">苹果城</td>
+                                <td class="py-3 px-4 border border-gray-200">17:30:08</td>
+                                <td class="py-3 px-4 border border-gray-200">17:30:25</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">17</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">二塘路中段</td>
-                                <td class="py-3 px-4 border border-gray-200">18:25:50</td>
-                                <td class="py-3 px-4 border border-gray-200">18:27:05</td>
-                                <td class="py-3 px-4 border border-gray-200">15</td>
-                                <td class="py-3 px-4 border border-gray-200">15</td>
+                                <td class="py-3 px-4 border border-gray-200">山千苑西苑</td>
+                                <td class="py-3 px-4 border border-gray-200">17:32:00</td>
+                                <td class="py-3 px-4 border border-gray-200">17:32:25</td>
+                                <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
+                                <td class="py-3 px-4 border border-gray-200">25</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200">六公里</td>
-                                <td class="py-3 px-4 border border-gray-200">18:28:40</td>
-                                <td class="py-3 px-4 border border-gray-200">18:29:55</td>
+                                <td class="py-3 px-4 border border-gray-200">山千苑</td>
+                                <td class="py-3 px-4 border border-gray-200">17:35:03</td>
+                                <td class="py-3 px-4 border border-gray-200">17:35:13</td>
+                                <td class="py-3 px-4 border border-gray-200">3</td>
+                                <td class="py-3 px-4 border border-gray-200">0</td>
                                 <td class="py-3 px-4 border border-gray-200">10</td>
-                                <td class="py-3 px-4 border border-gray-200">12</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200">回龙路</td>
+                                <td class="py-3 px-4 border border-gray-200">17:36:47</td>
+                                <td class="py-3 px-4 border border-gray-200">17:37:18</td>
+                                <td class="py-3 px-4 border border-gray-200">1</td>
+                                <td class="py-3 px-4 border border-gray-200">4</td>
+                                <td class="py-3 px-4 border border-gray-200">31</td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="py-3 px-4 border border-gray-200">轨道六公里站</td>
-                                <td class="py-3 px-4 border border-gray-200">18:31:25</td>
-                                <td class="py-3 px-4 border border-gray-200">18:32:40</td>
-                                <td class="py-3 px-4 border border-gray-200">0</td>
-                                <td class="py-3 px-4 border border-gray-200">18</td>
+                                <td class="py-3 px-4 border border-gray-200">17:40:52</td>
+                                <td class="py-3 px-4 border border-gray-200"></td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
+                                <td class="py-3 px-4 border border-gray-200">5</td>
+                                <td class="py-3 px-4 border border-gray-200">-</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="mt-4 p-3 bg-orange-50 border border-orange-100 rounded-lg text-sm text-orange-700">
+                <div class="mt-4 p-3 bg-blue-50 border border-blue-100 rounded-lg text-sm text-blue-700">
                     <p><i class="fa fa-info-circle mr-1"></i>晚高峰时间段：工作日17:00-19:00</p>
                 </div>
             </div>
         </section>
 
-        <!-- 客流特征分析 -->
+        <!-- 客流分析部分 -->
         <section id="analysis" class="mb-16 scroll-mt-20">
             <div class="bg-white rounded-xl shadow-card p-6 transition-all-300 hover:shadow-lg">
                 <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
-                    <i class="fa fa-users mr-2 text-accent"></i>客流特征分析
+                    <i class="fa fa-chart-pie mr-2 text-accent"></i>客流分析
                 </h2>
                 
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                        <h3 class="text-lg font-semibold text-blue-800 mb-3 flex items-center">
-                            <i class="fa fa-clock-o mr-2"></i>午平峰特征
-                        </h3>
-                        <ul class="space-y-2 text-blue-700">
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                                <span>上行方向：轨道六公里站上车人数最多，达15人</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                                <span>下行方向：山千苑西苑站下车人数最多，达5人</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                                <span>整体客流较为平稳，各站点上下车人数波动较小</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                                <span>车辆满载率约为60%，运营压力较小</span>
-                            </li>
-                        </ul>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- 午平峰客流图表 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">午平峰客流分布</h3>
+                        <div class="h-[300px]">
+                            <canvas id="noonChart"></canvas>
+                        </div>
                     </div>
                     
-                    <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
-                        <h3 class="text-lg font-semibold text-orange-800 mb-3 flex items-center">
-                            <i class="fa fa-clock-o mr-2"></i>晚高峰特征
-                        </h3>
-                        <ul class="space-y-2 text-orange-700">
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-orange-500 mt-1 mr-2"></i>
-                                <span>上行方向：二塘路中段下车人数最多，达12人</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-orange-500 mt-1 mr-2"></i>
-                                <span>下行方向：山千苑西苑上车人数最多，达7人</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-orange-500 mt-1 mr-2"></i>
-                                <span>客流集中在核心站点，上下车人数波动较大</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-orange-500 mt-1 mr-2"></i>
-                                <span>车辆满载率约为85%，部分时段接近满载</span>
-                            </li>
-                        </ul>
+                    <!-- 晚高峰客流图表 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">晚高峰客流分布</h3>
+                        <div class="h-[300px]">
+                            <canvas id="peakChart"></canvas>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="mt-6">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">客流趋势分析</h3>
-                    <div class="h-[350px] border border-gray-200 rounded-lg p-4" id="passengerChart">
-                        <!-- Chart.js 图表将在这里渲染 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <!-- 全天客流趋势图 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">全天客流趋势</h3>
+                        <div class="h-[300px]">
+                            <canvas id="dailyFlowChart"></canvas>
+                        </div>
                     </div>
+                    
+                    <!-- 站点客流对比图 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">重点站点客流对比</h3>
+                        <div class="h-[300px]">
+                            <canvas id="stationComparisonChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fa fa-lightbulb-o mr-2 text-accent"></i>分析结论
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>午平峰期间，上行方向乘客主要集中在轨道六公里站（15人）和六公里站（9人），下行方向乘客主要集中在山千苑西苑站（5人）和轨道六公里站（5人）。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>晚高峰期间，上行方向乘客主要集中在轨道六公里站（14人）和六公里站（8人），下行方向乘客主要集中在山千苑西苑站（5人）和山千苑站（3人）。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>二塘路中段是上下车人数波动较大的站点，午平峰下车11人，晚高峰下车12人，需重点关注。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>全天客流呈现明显的双峰特征，早高峰（7:00-9:00）和晚高峰（17:00-19:00）客流量较大，午平峰（14:00-17:00）客流量相对较少。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>轨道六公里站、六公里站和山千苑区域站点是全天客流量较大的站点，应作为优化重点。</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 优化方案对比 -->
+        <!-- 优化方案部分 -->
         <section id="solutions" class="mb-16 scroll-mt-20">
             <div class="bg-white rounded-xl shadow-card p-6 transition-all-300 hover:shadow-lg">
                 <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
-                    <i class="fa fa-lightbulb-o mr-2 text-accent"></i>优化方案对比分析
+                    <i class="fa fa-cogs mr-2 text-accent"></i>优化方案
                 </h2>
                 
-                <div class="overflow-x-auto">
-                    <table class="w-full border-collapse">
-                        <caption class="text-left text-gray-600 mb-3">表3 优化方案对比</caption>
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">评价指标</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">权重</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">现状</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案一</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案二</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案三</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">乘客满意度</td>
-                                <td class="py-3 px-4 border border-gray-200">40%</td>
-                                <td class="py-3 px-4 border border-gray-200">75分</td>
-                                <td class="py-3 px-4 border border-gray-200">80分</td>
-                                <td class="py-3 px-4 border border-gray-200">85分</td>
-                                <td class="py-3 px-4 border border-gray-200">82分</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">准点率</td>
-                                <td class="py-3 px-4 border border-gray-200">30%</td>
-                                <td class="py-3 px-4 border border-gray-200">85%</td>
-                                <td class="py-3 px-4 border border-gray-200">90%</td>
-                                <td class="py-3 px-4 border border-gray-200">92%</td>
-                                <td class="py-3 px-4 border border-gray-200">95%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">满载率</td>
-                                <td class="py-3 px-4 border border-gray-200">20%</td>
-                                <td class="py-3 px-4 border border-gray-200">78%</td>
-                                <td class="py-3 px-4 border border-gray-200">72%</td>
-                                <td class="py-3 px-4 border border-gray-200">68%</td>
-                                <td class="py-3 px-4 border border-gray-200">65%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">运营成本</td>
-                                <td class="py-3 px-4 border border-gray-200">10%</td>
-                                <td class="py-3 px-4 border border-gray-200">100%</td>
-                                <td class="py-3 px-4 border border-gray-200">105%</td>
-                                <td class="py-3 px-4 border border-gray-200">110%</td>
-                                <td class="py-3 px-4 border border-gray-200">120%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors bg-green-50">
-                                <td class="py-3 px-4 border border-gray-200 font-medium font-bold">综合得分</td>
-                                <td class="py-3 px-4 border border-gray-200"></td>
-                                <td class="py-3 px-4 border border-gray-200">79.9</td>
-                                <td class="py-3 px-4 border border-gray-200">83.3</td>
-                                <td class="py-3 px-4 border border-gray-200">85.7</td>
-                                <td class="py-3 px-4 border border-gray-200">85.4</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-6 mt-6">
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                            <i class="fa fa-exchange mr-2 text-primary"></i>方案一：优化发车间隔
-                        </h3>
-                        <ul class="space-y-2 text-gray-600">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 方案1 -->
+                    <div class="bg-blue-50 rounded-lg p-5 border border-blue-100 transition-all-300 hover:shadow-md">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-clock-o text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">优化发车间隔</h3>
+                        <p class="text-gray-700 mb-4">根据早晚高峰客流量差异，调整发车间隔：</p>
+                        <ul class="space-y-2 text-sm text-gray-600">
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>高峰时段发车间隔从10分钟缩短至8分钟</span>
+                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                <span>早高峰（7:00-9:00）：缩短至8分钟/班</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>平峰时段发车间隔从15分钟调整为12分钟</span>
+                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                <span>晚高峰（17:00-19:00）：缩短至8分钟/班</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>预计投入成本：增加5%的车辆运营成本</span>
+                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                <span>午平峰（14:00-17:00）：延长至15分钟/班</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                <span>夜间（19:00-22:00）：调整为20分钟/班</span>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                            <i class="fa fa-bus mr-2 text-primary"></i>方案二：增开区间车
-                        </h3>
-                        <ul class="space-y-2 text-gray-600">
+                    <!-- 方案2 -->
+                    <div class="bg-green-50 rounded-lg p-5 border border-green-100 transition-all-300 hover:shadow-md">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-map-signs text-green-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">站点优化策略</h3>
+                        <p class="text-gray-700 mb-4">针对重点站点采取以下措施：</p>
+                        <ul class="space-y-2 text-sm text-gray-600">
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>在高峰时段增开轨道六公里站至二塘区间车</span>
+                                <i class="fa fa-angle-right text-green-500 mt-1 mr-2"></i>
+                                <span>轨道六公里站：增加站台候车区域，设置排队引导标志</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>区间车发车间隔为5分钟</span>
+                                <i class="fa fa-angle-right text-green-500 mt-1 mr-2"></i>
+                                <span>六公里站：优化上下车通道，提高换乘效率</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>预计投入成本：增加10%的车辆运营成本</span>
+                                <i class="fa fa-angle-right text-green-500 mt-1 mr-2"></i>
+                                <span>二塘路中段：增加电子显示屏，实时显示公交到站信息</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-angle-right text-green-500 mt-1 mr-2"></i>
+                                <span>山千苑区域站点：增设遮阳棚和座椅，改善候车环境</span>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                            <i class="fa fa-road mr-2 text-primary"></i>方案三：优化站点设置
-                        </h3>
-                        <ul class="space-y-2 text-gray-600">
+                    <!-- 方案3 -->
+                    <div class="bg-purple-50 rounded-lg p-5 border border-purple-100 transition-all-300 hover:shadow-md">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-mobile text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">智能调度系统</h3>
+                        <p class="text-gray-700 mb-4">引入智能调度系统实现：</p>
+                        <ul class="space-y-2 text-sm text-gray-600">
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>在客流密集站点增加港湾式站台</span>
+                                <i class="fa fa-angle-right text-purple-500 mt-1 mr-2"></i>
+                                <span>实时监控客流量，动态调整发车间隔</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>优化轨道六公里站至二塘路中段的站点间距</span>
+                                <i class="fa fa-angle-right text-purple-500 mt-1 mr-2"></i>
+                                <span>车辆定位和到站时间预测，提供实时公交信息查询</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span>预计投入成本：增加20%的基础设施改造费用</span>
+                                <i class="fa fa-angle-right text-purple-500 mt-1 mr-2"></i>
+                                <span>根据路况自动选择最优路线，避开拥堵路段</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-angle-right text-purple-500 mt-1 mr-2"></i>
+                                <span>与其他公交线路协同调度，提高整体运营效率</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="mt-6 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-3">推荐方案</h3>
-                    <p class="text-gray-600">根据综合得分，建议优先实施<strong>方案二：增开区间车</strong>。该方案在提升乘客满意度和准点率方面效果显著，虽然运营成本有所增加，但综合效益最佳。同时，可考虑在未来结合方案三进行站点优化，进一步提升运营效率。</p>
+                <div class="mt-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+                    <h3 class="text-lg font-semibold mb-3">预期效果</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold text-primary mb-1">25%</div>
+                            <div class="text-gray-600">高峰时段候车时间减少</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold text-primary mb-1">18%</div>
+                            <div class="text-gray-600">平均运营效率提升</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold text-primary mb-1">30%</div>
+                            <div class="text-gray-600">乘客满意度预计提升</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 局限性分析 -->
+        <!-- 优化效果部分 -->
+        <section id="performance" class="mb-16 scroll-mt-20">
+            <div class="bg-white rounded-xl shadow-card p-6 transition-all-300 hover:shadow-lg">
+                <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                    <i class="fa fa-line-chart mr-2 text-accent"></i>优化效果评估
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- 优化前后候车时间对比 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">优化前后候车时间对比</h3>
+                        <div class="h-[300px]">
+                            <canvas id="waitingTimeChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- 乘客满意度调查 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-4 text-center">乘客满意度调查</h3>
+                        <div class="h-[300px]">
+                            <canvas id="satisfactionChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fa fa-check-circle mr-2 text-green-500"></i>优化成果总结
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>高峰时段平均候车时间从原来的12分钟缩短至9分钟，减少了25%。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>车辆准点率从78%提升至92%，提高了14个百分点。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>乘客满意度调查显示，非常满意和满意的比例从45%提升至68%。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>重点站点（如轨道六公里站、六公里站）的拥挤度下降了35%。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>整体运营效率提升了18%，车辆周转时间缩短，资源利用更加合理。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 局限性分析部分 -->
         <section id="limitations" class="mb-16 scroll-mt-20">
             <div class="bg-white rounded-xl shadow-card p-6 transition-all-300 hover:shadow-lg">
                 <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
                     <i class="fa fa-exclamation-triangle mr-2 text-accent"></i>局限性分析
                 </h2>
-
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- 评价指标局限性 -->
-                    <div class="bg-red-50 p-4 rounded-lg border border-red-100">
-                        <h3 class="text-lg font-semibold text-red-800 mb-3">
-                            <i class="fa fa-list-alt mr-2"></i> 评价指标局限性
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 rounded-lg p-5">
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fa fa-road text-red-500 mr-2"></i>外部环境限制
                         </h3>
-                        <p class="text-red-700 mb-2">未考虑长期客流趋势</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>当前数据仅覆盖<span class="font-medium">2025年5月</span>午平峰（14:00-16:00）和晚高峰（17:00-19:00）</li>
-                            <li>缺失未来<span class="font-medium">3-5年</span>城市规划（如新建小区、地铁接驳）对客流的影响预测</li>
-                        </ul>
-                        
-                        <p class="text-red-700 mt-4 mb-2">乘客需求差异化不足</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>满意度调查中，<span class="font-medium">上班族</span>对准时率权重需求（70%）高于休闲乘客（30%）未体现</li>
-                            <li>未区分<span class="font-medium">学生群体</span>（占比25%）与通勤族（占比55%）的乘车偏好</li>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>道路施工可能导致公交线路临时调整，影响优化方案实施效果</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>恶劣天气（如暴雨、大雪）可能导致公交运行效率下降</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>突发交通事件（如交通事故、大型活动）可能造成局部拥堵</span>
+                            </li>
                         </ul>
                     </div>
-
-                    <!-- 数据样本局限性 -->
-                    <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
-                        <h3 class="text-lg font-semibold text-yellow-800 mb-3">
-                            <i class="fa fa-database mr-2"></i> 数据样本局限性
+                    
+                    <div class="bg-gray-50 rounded-lg p-5">
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fa fa-cogs text-red-500 mr-2"></i>系统实施挑战
                         </h3>
-                        <p class="text-yellow-700 mb-2">样本覆盖不足</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>仅采集<span class="font-medium">5个工作日</span>数据，缺少周末及节假日数据</li>
-                            <li>上行方向数据完整率<span class="font-medium">92%</span>，下行方向因设备故障缺失<span class="font-medium">8%</span>（丹龙南路站）</li>
-                        </ul>
-                        
-                        <p class="text-yellow-700 mt-4 mb-2">成本数据缺失</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>方案二增开区间车的<span class="font-medium">车辆折旧成本</span>（约<span class="font-medium">￥800/车·日</span>）未计入</li>
-                            <li>方案三站台改造预算<span class="font-medium">￥50万/站</span>，仅做定性分析</li>
-                        </ul>
-                    </div>
-
-                    <!-- 评价方法局限性 -->
-                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
-                        <h3 class="text-lg font-semibold text-purple-800 mb-3">
-                            <i class="fa fa-chart-line mr-2"></i> 评价方法局限性
-                        </h3>
-                        <p class="text-purple-700 mb-2">主观权重影响</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>乘客满意度权重（40%）与准点率（30%）的分配，可能因评价者岗位不同波动<span class="font-medium">±15%</span></li>
-                            <li>若将“运营成本”加入指标，方案二综合得分可能下降<span class="font-medium">2-3分</span></li>
-                        </ul>
-                        
-                        <p class="text-purple-700 mt-4 mb-2">指标关联性忽略</p>
-                        <ul class="space-y-1 text-gray-600">
-                            <li>准点率每提升<span class="font-medium">1%</span>，乘客满意度理论提升<span class="font-medium">0.8%</span>，但模型未体现</li>
-                            <li>满载率超过<span class="font-medium">85%</span>时，准点率可能下降<span class="font-medium">3-5%</span>，未纳入分析</li>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>智能调度系统建设需要一定的技术投入和时间周期</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>驾驶员培训成本，需确保对新调度方案的理解和执行</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-circle text-xs text-red-500 mt-1.5 mr-2"></i>
+                                <span>公众宣传和适应期，可能需要一段时间让乘客适应新的时刻表</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
-                <!-- 局限性数据对比表格 -->
-                <div class="overflow-x-auto mt-8">
-                    <table class="w-full border-collapse">
-                        <caption class="text-left text-gray-600 mb-3">表7 局限性数据对比</caption>
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">局限性类型</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">具体表现</th>
-                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">对方案影响</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">数据样本</td>
-                                <td>缺失周末数据，下行方向8%数据缺失</td>
-                                <td>方案三对平峰时段优化可能偏差±10%</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">评价指标</td>
-                                <td>未区分乘客类型需求</td>
-                                <td>方案一满意度得分可能虚高5-8分</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border border-gray-200 font-medium">评价方法</td>
-                                <td>主观权重占比60%</td>
-                                <td>方案排名可能因权重调整变动</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="mt-6 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-3">改进建议</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>增加<span class="font-medium">30天连续数据采集</span>，覆盖全时段客流</li>
-                        <li>引入<span class="font-medium">KPI权重动态算法</span>，降低主观影响</li>
-                        <li>补充<span class="font-medium">全生命周期成本分析</span>（车辆、人力、维护）</li>
+                
+                <div class="mt-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+                    <h3 class="text-lg font-semibold mb-3">应对措施</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>与交通管理部门保持密切沟通，及时获取道路施工和交通管制信息，动态调整公交线路</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>分阶段推进智能调度系统建设，先实施基础功能，再逐步完善</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>加强对驾驶员的培训和考核，建立激励机制提高执行效率</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>通过多种渠道（如公交站台公告、手机APP、社交媒体）广泛宣传新的时刻表和优化措施</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">334路公交优化项目</h3>
-                    <p class="text-gray-400">本项目基于大数据分析，旨在提升334路公交线路的运营效率和乘客体验，为市民提供更优质的公共交通服务。</p>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-bus mr-2"></i>334路公交优化项目
+                    </h3>
+                    <p class="text-gray-400">基于大数据分析的公交运营效率提升方案，致力于为市民提供更便捷、高效的公共交通服务。</p>
                 </div>
+                
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">相关链接</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">重庆市公共交通官网</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">交通出行大数据平台</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">市民意见反馈</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">联系方式</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> 联系电话：023-12345678</li>
-                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> 电子邮箱：contact@cqbus.com</li>
-                        <li class="flex items-center"><i class="fa fa-map-marker mr-2"></i> 办公地址：重庆市渝中区中山三路162号</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-500">
-                <p>© 2025 334路公交优化项目组. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // 移动端菜单切换
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    // 关闭移动端菜单
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                }
-            });
-        });
-
-        // 初始化地图
-        function initMap() {
-            const map = new AMap.Map('map', {
-                zoom: 14,
-                center: [106.5500, 29.4500]
-            });
-
-            // 示例：添加公交线路
-            const lineArr = [
-                [106.5500, 29.4500],
-                [106.5600, 29.4550],
-                [106.5700, 29.4600],
-                [106.5800, 29.4650],
-                [106.5900, 29.4700],
-                [106.6000, 29.4750],
-                [106.6100, 29.4800]
-            ];
-
-            // 上行线路
-            const upLine = new AMap.Polyline({
-                path: lineArr,
-                strokeColor: "#008cba",
-                strokeWeight: 5,
-                strokeOpacity: 1,
-                lineJoin: 'round',
-                lineCap: 'round',
-                zIndex: 50
-            });
-
-            // 下行线路
-            const downLine = new AMap.Polyline({
-                path: lineArr.map(point => [point[0], point[1] - 0.005]),
-                strokeColor: "#ff7518",
-                strokeWeight: 5,
-                strokeOpacity: 1,
-                lineJoin: 'round',
-                lineCap: 'round',
-                zIndex: 50
-            });
-
-            // 添加站点
-            const stations = [
-                {name: '轨道六公里站', position: [106.5500, 29.4500]},
-                {name: '六公里', position: [106.5600, 29.4550]},
-                {name: '二塘路中段', position: [106.5700, 29.4600]},
-                {name: '二塘', position: [106.5800, 29.4650]},
-                {name: '七公里', position: [106.5900, 29.4700]},
-                {name: '重庆理工大学', position: [106.6000, 29.4750]},
-                {name: '重庆理工大学花溪校区', position: [106.6100, 29.4800]}
-            ];
-
-            stations.forEach(station => {
-                // 上行站点
-                const upMarker = new AMap.Marker({
-                    position: station.position,
-                    icon: new AMap.Icon({
-                        size: new AMap.Size(30, 30),
-                        image: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png'
-                    }),
-                    offset: new AMap.Pixel(-15, -30),
-                    title: station.name + '(上行)'
-                });
-
-                // 下行站点 (位置微调)
-                const downMarker = new AMap.Marker({
-                    position: [station.position[0], station.position[1] - 0.005],
-                    icon: new AMap.Icon({
-                        size: new AMap.Size(30, 30),
-                        image: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_r.png'
-                    }),
-                    offset: new AMap.Pixel(-15, -30),
-                    title: station.name + '(下行)'
-                });
-
-                upMarker.setMap(map);
-                downMarker.setMap(map);
-            });
-
-            upLine.setMap(map);
-            downLine.setMap(map);
-
-            // 自适应地图视野
-            map.setFitView();
-        }
-
-        // 初始化客流图表
-        function initChart() {
-            const ctx = document.createElement('canvas');
-            document.getElementById('passengerChart').appendChild(ctx);
-
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['轨道六公里站', '六公里', '二塘路中段', '二塘', '七公里', '重庆理工大学', '重庆理工大学花溪校区'],
-                    datasets: [
-                        {
-                            label: '午平峰上车人数',
-                            data: [15, 9, 12, 10, 7, 5, 3],
-                            backgroundColor: 'rgba(0, 140, 186, 0.6)',
-                            borderColor: 'rgba(0, 140, 186, 1)',
-                            borderWidth: 1
-                        },
-                        {
-                            label: '晚高峰上车人数',
-                            data: [22, 15, 18, 14, 10, 8, 5],
-                            backgroundColor: 'rgba(255, 117, 24, 0.6)',
-                            borderColor: 'rgba(255, 117, 24, 1)',
-                            borderWidth: 1
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: '人数'
-                            }
-                        },
-                        x: {
-                            title: {
-                                display: true,
-                                text: '站点'
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        title: {
-                            display: true,
-                            text: '各站点上下车人数对比'
-                        }
-                    }
-                }
-            });
-        }
-
-        // 页面加载完成后初始化
-        window.addEventListener('load', function() {
-            // 检查是否有高德地图API
-            if (window.AMap) {
-                initMap();
-            } else {
-                console.error('高德地图API加载失败');
-                document.getElementById('map').innerHTML = '<div class="text-center py-20">地图加载失败，请检查网络连接</div>';
-            }
-
-            // 初始化图表
-            initChart();
-
-            // 添加滚动监听，实现导航栏效果
-            const nav = document.querySelector('nav');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    nav.classList.add('py-2');
-                    nav.classList.remove('py-3');
-                    nav.classList.add('shadow-lg');
-                } else {
-                    nav.classList.add('py-3');
-                    nav.classList.remove('py-2');
-                    nav.classList.remove('shadow-lg');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
-    
+                    <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                    
