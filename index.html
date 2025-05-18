@@ -437,4 +437,461 @@
                 
                 <div class="overflow-x-auto">
                     <table class="w-full border-collapse">
-                        <caption class="text-left text-gray-600 mb
+                        <caption class="text-left text-gray-600 mb-3">表3 优化方案对比</caption>
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">评价指标</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">权重</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">现状</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案一</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案二</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">方案三</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">乘客满意度</td>
+                                <td class="py-3 px-4 border border-gray-200">40%</td>
+                                <td class="py-3 px-4 border border-gray-200">75分</td>
+                                <td class="py-3 px-4 border border-gray-200">80分</td>
+                                <td class="py-3 px-4 border border-gray-200">85分</td>
+                                <td class="py-3 px-4 border border-gray-200">82分</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">准点率</td>
+                                <td class="py-3 px-4 border border-gray-200">30%</td>
+                                <td class="py-3 px-4 border border-gray-200">85%</td>
+                                <td class="py-3 px-4 border border-gray-200">90%</td>
+                                <td class="py-3 px-4 border border-gray-200">92%</td>
+                                <td class="py-3 px-4 border border-gray-200">95%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">满载率</td>
+                                <td class="py-3 px-4 border border-gray-200">20%</td>
+                                <td class="py-3 px-4 border border-gray-200">78%</td>
+                                <td class="py-3 px-4 border border-gray-200">72%</td>
+                                <td class="py-3 px-4 border border-gray-200">68%</td>
+                                <td class="py-3 px-4 border border-gray-200">65%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">运营成本</td>
+                                <td class="py-3 px-4 border border-gray-200">10%</td>
+                                <td class="py-3 px-4 border border-gray-200">100%</td>
+                                <td class="py-3 px-4 border border-gray-200">105%</td>
+                                <td class="py-3 px-4 border border-gray-200">110%</td>
+                                <td class="py-3 px-4 border border-gray-200">120%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors bg-green-50">
+                                <td class="py-3 px-4 border border-gray-200 font-medium font-bold">综合得分</td>
+                                <td class="py-3 px-4 border border-gray-200"></td>
+                                <td class="py-3 px-4 border border-gray-200">79.9</td>
+                                <td class="py-3 px-4 border border-gray-200">83.3</td>
+                                <td class="py-3 px-4 border border-gray-200">85.7</td>
+                                <td class="py-3 px-4 border border-gray-200">85.4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fa fa-exchange mr-2 text-primary"></i>方案一：优化发车间隔
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>高峰时段发车间隔从10分钟缩短至8分钟</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>平峰时段发车间隔从15分钟调整为12分钟</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>预计投入成本：增加5%的车辆运营成本</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fa fa-bus mr-2 text-primary"></i>方案二：增开区间车
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>在高峰时段增开轨道六公里站至二塘区间车</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>区间车发车间隔为5分钟</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>预计投入成本：增加10%的车辆运营成本</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fa fa-road mr-2 text-primary"></i>方案三：优化站点设置
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>在客流密集站点增加港湾式站台</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>优化轨道六公里站至二塘路中段的站点间距</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>预计投入成本：增加20%的基础设施改造费用</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-6 p-4 bg-gray-100 border border-gray-200 rounded-lg">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">推荐方案</h3>
+                    <p class="text-gray-600">根据综合得分，建议优先实施<strong>方案二：增开区间车</strong>。该方案在提升乘客满意度和准点率方面效果显著，虽然运营成本有所增加，但综合效益最佳。同时，可考虑在未来结合方案三进行站点优化，进一步提升运营效率。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 局限性分析 -->
+        <section id="limitations" class="mb-16 scroll-mt-20">
+            <div class="bg-white rounded-xl shadow-card p-6 transition-all-300 hover:shadow-lg">
+                <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                    <i class="fa fa-exclamation-triangle mr-2 text-accent"></i>局限性分析
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 评价指标局限性 -->
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                        <h3 class="text-lg font-semibold text-red-800 mb-3">
+                            <i class="fa fa-list-alt mr-2"></i> 评价指标局限性
+                        </h3>
+                        <p class="text-red-700 mb-2">未考虑长期客流趋势</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>当前数据仅覆盖<span class="font-medium">2025年5月</span>午平峰（14:00-16:00）和晚高峰（17:00-19:00）</li>
+                            <li>缺失未来<span class="font-medium">3-5年</span>城市规划（如新建小区、地铁接驳）对客流的影响预测</li>
+                        </ul>
+                        
+                        <p class="text-red-700 mt-4 mb-2">乘客需求差异化不足</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>满意度调查中，<span class="font-medium">上班族</span>对准时率权重需求（70%）高于休闲乘客（30%）未体现</li>
+                            <li>未区分<span class="font-medium">学生群体</span>（占比25%）与通勤族（占比55%）的乘车偏好</li>
+                        </ul>
+                    </div>
+
+                    <!-- 数据样本局限性 -->
+                    <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                        <h3 class="text-lg font-semibold text-yellow-800 mb-3">
+                            <i class="fa fa-database mr-2"></i> 数据样本局限性
+                        </h3>
+                        <p class="text-yellow-700 mb-2">样本覆盖不足</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>仅采集<span class="font-medium">5个工作日</span>数据，缺少周末及节假日数据</li>
+                            <li>上行方向数据完整率<span class="font-medium">92%</span>，下行方向因设备故障缺失<span class="font-medium">8%</span>（丹龙南路站）</li>
+                        </ul>
+                        
+                        <p class="text-yellow-700 mt-4 mb-2">成本数据缺失</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>方案二增开区间车的<span class="font-medium">车辆折旧成本</span>（约<span class="font-medium">￥800/车·日</span>）未计入</li>
+                            <li>方案三站台改造预算<span class="font-medium">￥50万/站</span>，仅做定性分析</li>
+                        </ul>
+                    </div>
+
+                    <!-- 评价方法局限性 -->
+                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-3">
+                            <i class="fa fa-chart-line mr-2"></i> 评价方法局限性
+                        </h3>
+                        <p class="text-purple-700 mb-2">主观权重影响</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>乘客满意度权重（40%）与准点率（30%）的分配，可能因评价者岗位不同波动<span class="font-medium">±15%</span></li>
+                            <li>若将“运营成本”加入指标，方案二综合得分可能下降<span class="font-medium">2-3分</span></li>
+                        </ul>
+                        
+                        <p class="text-purple-700 mt-4 mb-2">指标关联性忽略</p>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>准点率每提升<span class="font-medium">1%</span>，乘客满意度理论提升<span class="font-medium">0.8%</span>，但模型未体现</li>
+                            <li>满载率超过<span class="font-medium">85%</span>时，准点率可能下降<span class="font-medium">3-5%</span>，未纳入分析</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 局限性数据对比表格 -->
+                <div class="overflow-x-auto mt-8">
+                    <table class="w-full border-collapse">
+                        <caption class="text-left text-gray-600 mb-3">表7 局限性数据对比</caption>
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">局限性类型</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">具体表现</th>
+                                <th class="py-3 px-4 border border-gray-200 text-left font-semibold">对方案影响</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">数据样本</td>
+                                <td>缺失周末数据，下行方向8%数据缺失</td>
+                                <td>方案三对平峰时段优化可能偏差±10%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">评价指标</td>
+                                <td>未区分乘客类型需求</td>
+                                <td>方案一满意度得分可能虚高5-8分</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-3 px-4 border border-gray-200 font-medium">评价方法</td>
+                                <td>主观权重占比60%</td>
+                                <td>方案排名可能因权重调整变动</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-6 p-4 bg-gray-100 border border-gray-200 rounded-lg">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">改进建议</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>增加<span class="font-medium">30天连续数据采集</span>，覆盖全时段客流</li>
+                        <li>引入<span class="font-medium">KPI权重动态算法</span>，降低主观影响</li>
+                        <li>补充<span class="font-medium">全生命周期成本分析</span>（车辆、人力、维护）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">334路公交优化项目</h3>
+                    <p class="text-gray-400">本项目基于大数据分析，旨在提升334路公交线路的运营效率和乘客体验，为市民提供更优质的公共交通服务。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">相关链接</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">重庆市公共交通官网</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">交通出行大数据平台</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">市民意见反馈</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">联系方式</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> 联系电话：023-12345678</li>
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> 电子邮箱：contact@cqbus.com</li>
+                        <li class="flex items-center"><i class="fa fa-map-marker mr-2"></i> 办公地址：重庆市渝中区中山三路162号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-500">
+                <p>© 2025 334路公交优化项目组. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    // 关闭移动端菜单
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // 初始化地图
+        function initMap() {
+            const map = new AMap.Map('map', {
+                zoom: 14,
+                center: [106.5500, 29.4500]
+            });
+
+            // 示例：添加公交线路
+            const lineArr = [
+                [106.5500, 29.4500],
+                [106.5600, 29.4550],
+                [106.5700, 29.4600],
+                [106.5800, 29.4650],
+                [106.5900, 29.4700],
+                [106.6000, 29.4750],
+                [106.6100, 29.4800]
+            ];
+
+            // 上行线路
+            const upLine = new AMap.Polyline({
+                path: lineArr,
+                strokeColor: "#008cba",
+                strokeWeight: 5,
+                strokeOpacity: 1,
+                lineJoin: 'round',
+                lineCap: 'round',
+                zIndex: 50
+            });
+
+            // 下行线路
+            const downLine = new AMap.Polyline({
+                path: lineArr.map(point => [point[0], point[1] - 0.005]),
+                strokeColor: "#ff7518",
+                strokeWeight: 5,
+                strokeOpacity: 1,
+                lineJoin: 'round',
+                lineCap: 'round',
+                zIndex: 50
+            });
+
+            // 添加站点
+            const stations = [
+                {name: '轨道六公里站', position: [106.5500, 29.4500]},
+                {name: '六公里', position: [106.5600, 29.4550]},
+                {name: '二塘路中段', position: [106.5700, 29.4600]},
+                {name: '二塘', position: [106.5800, 29.4650]},
+                {name: '七公里', position: [106.5900, 29.4700]},
+                {name: '重庆理工大学', position: [106.6000, 29.4750]},
+                {name: '重庆理工大学花溪校区', position: [106.6100, 29.4800]}
+            ];
+
+            stations.forEach(station => {
+                // 上行站点
+                const upMarker = new AMap.Marker({
+                    position: station.position,
+                    icon: new AMap.Icon({
+                        size: new AMap.Size(30, 30),
+                        image: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png'
+                    }),
+                    offset: new AMap.Pixel(-15, -30),
+                    title: station.name + '(上行)'
+                });
+
+                // 下行站点 (位置微调)
+                const downMarker = new AMap.Marker({
+                    position: [station.position[0], station.position[1] - 0.005],
+                    icon: new AMap.Icon({
+                        size: new AMap.Size(30, 30),
+                        image: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_r.png'
+                    }),
+                    offset: new AMap.Pixel(-15, -30),
+                    title: station.name + '(下行)'
+                });
+
+                upMarker.setMap(map);
+                downMarker.setMap(map);
+            });
+
+            upLine.setMap(map);
+            downLine.setMap(map);
+
+            // 自适应地图视野
+            map.setFitView();
+        }
+
+        // 初始化客流图表
+        function initChart() {
+            const ctx = document.createElement('canvas');
+            document.getElementById('passengerChart').appendChild(ctx);
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['轨道六公里站', '六公里', '二塘路中段', '二塘', '七公里', '重庆理工大学', '重庆理工大学花溪校区'],
+                    datasets: [
+                        {
+                            label: '午平峰上车人数',
+                            data: [15, 9, 12, 10, 7, 5, 3],
+                            backgroundColor: 'rgba(0, 140, 186, 0.6)',
+                            borderColor: 'rgba(0, 140, 186, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: '晚高峰上车人数',
+                            data: [22, 15, 18, 14, 10, 8, 5],
+                            backgroundColor: 'rgba(255, 117, 24, 0.6)',
+                            borderColor: 'rgba(255, 117, 24, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '人数'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '站点'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '各站点上下车人数对比'
+                        }
+                    }
+                }
+            });
+        }
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', function() {
+            // 检查是否有高德地图API
+            if (window.AMap) {
+                initMap();
+            } else {
+                console.error('高德地图API加载失败');
+                document.getElementById('map').innerHTML = '<div class="text-center py-20">地图加载失败，请检查网络连接</div>';
+            }
+
+            // 初始化图表
+            initChart();
+
+            // 添加滚动监听，实现导航栏效果
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    nav.classList.add('py-2');
+                    nav.classList.remove('py-3');
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.add('py-3');
+                    nav.classList.remove('py-2');
+                    nav.classList.remove('shadow-lg');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    
